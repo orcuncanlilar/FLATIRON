@@ -1,0 +1,12 @@
+{
+    "python.REPL.enableREPLSmartSend": false,
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "editor.guides.bracketPairs": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "macros": { // Note: this requires macros extension by publisher:"geddski" 
+        "pythonExecSelectionAndCursorDown": [
+            "python.execSelectionInTerminal",
+            "cursorDown"
+        ]
+    }
+}
