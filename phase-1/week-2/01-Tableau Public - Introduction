@@ -1,0 +1,91 @@
+Tableau Public - Getting Started
+
+Introduction
+
+In this lesson, we will learn the first steps for getting started with Tableau Public. First, you will create a Tableau account and download Tableau to your computer. Then, we will launch the Tableau environment and explore the user interface. All of this begins at the Tableau Start page. Learning the core components of the Tableau Start page will build a foundation to begin creating visualizations and dashboards in the upcoming labs.
+
+Learning Objectives
+	Download and install Tableau Public
+	Identify and recognize the core components of the Start page
+	Connect to a data source to create and save a new Tableau workbook
+
+Download and Install Tableau Public
+
+1. Create a Tableau Account
+To use Tableau Public, visit the Tableau website(https://public.tableau.com/app/discover) to an external site. and select the button Sign Up for Tableau Public.
+
+2. Download Tableau
+ 
+Once you have created and signed into your account, follow this link(https://www.tableau.com/products/public/download)to an external site. and select Download Tableau Public 
+Follow the prompts to download and install Tableau Public on your computer.
+Finally, restart your computer and launch the Tableau environment from your desktop. 
+
+Core Components of the Start Page
+When Tableau opens, you will be on the Start page.
+
+From the Start page, you can: * connect to data sources to create new Tableau workbooks * open existing workbooks * find Tableau resources like videos, tutorials, blogs, and sample data sets
+
+In the image below, each of the components of the Start page is labeled with a number. Use the guide below the image to learn about each component.
+
+1. Tableau icon
+On the top left of the Start page, you will find the Tableau icon. The Tableau icon will create a new notebook without first connecting to a new data source if you are on the Start page. It will perform other functions in different areas of the Tableau interface, which we will cover in the Data Source page section below.
+
+2. Connect
+Displays data connection options, for example: * To a File which allows you to connect to a local file-based data source. This could file such as Microsoft Excel spreadsheets, CSV files, and JSON files. Tableau can even extract tabular data from spreadsheets on PDF files
+
+To a Server which allows you to connect to remote storage options like a Google Drive. You can also connect to relational databases via Data and Web Data connector.
+
+3. Open
+Displays the locations where Tableau work can be retrieved and edited.
+Right now, it is empty because we have not created any workbooks yet.
+In the future, you can Open from Tableau Public to sign into your account and retrieve workbooks from the Tableau Public website.
+
+4. Discover
+How-to-Videos demonstrate how to use Tableau.
+Viz of the Day brings you to Tableau Viz of the Day where you can get inspiration for new visualizations.
+Resources provides links to Tableau's blog, sample data sets, as well the current status of the server pod where your Tableau Public account is hosted.
+In this lesson, we will primarily focus on the Connect and Discover panes of the start page.
+
+Your Turn: Connect to Data and Create a Workbook
+
+1. Access Tableau Resources from the Discover Pane
+In the lower right corner of the Discover pane, Click on the Explore Sample Data Set.
+
+2. Download Superstore Sales Data
+The Superstore Sales data set is one that we will be working with in future lessons, so take a moment to download it. When you click on the link a dialogue box will open to choose the location to save the file. For ease of access, choose the Datasources folder in the My Tableau Repository directory(**Documents/My Tableau Repository/Datasources/Sample - Superstore.xls was automatically created when you installed Tableau). If Sample - Superstore.xls already exists in your /My Tableau Repository/Datasources directory, it is OK to overwrite it.
+
+
+3. Connect to Data to Tableau
+Next, we will navigate to the Connect pane in the upper left-hand corner of the screen, directly below the Tableau icon and select To a File > Microsoft Excel.
+
+Then, use the Open dialogue box to retrieve Documents/My Tableau Repository/Datasources/en_US-US/Sample - Superstore.xls.
+
+4. Launch the Data Source Page
+After completing the steps above, Tableau will launch the Data Source page. Now, Your screen should look something like this:
+
+Summary
+In this lesson, we created a Tableau account and downloaded and installed Tableau Public. Then, we identified the core components of the Start page. Next, we used the Discover pane to locate Tableau Public Resources and download the Superstore Sales data set. Finally, we used the Connect pane to retrieve the downloaded dataset and create a new Tableau workbook. If possible, keep Tableau open as you move on to the next lesson so we can move right into describing the Data Source page.
+
+In the next lesson, we will explore more elements of the Tableau Public interface by identifying and describing the core components of the Data Source page. Then, we will launch the Tableau workspace and begin creating worksheets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

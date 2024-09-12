@@ -1,0 +1,155 @@
+Tableau Public - Data Sources and the Tableau Workspace
+
+Introduction
+In the previous lesson, we used the Connect pane on the Start page to open the Superstore Sales sample data set that we downloaded from the Tableau Resources collection. This will have opened a new Tableau workbook to the Data Source page.
+
+In this lesson, we will discuss the components of the Data Source page. Then, we will launch the Tableau workspace, explore its components, and create our first Tableau workbook.
+
+Learning Objectives
+In this lesson, we will: * identify and describe the core components of the Data Source page * populate the Data Source page with data from the Superstore Sales dataset * Launch the Tableau workspace from the Data Source page
+
+Core Components of Data Source Page
+Let's begin by examining the core components of the Data Source Page.
+
+Sheets Tab
+
+In Tableau, sheets can be worksheets, dashboards, or stories. Each of these can be created by selecting the appropriate icon from the sheets tab. In upcoming lessons, we will explore how to create the various kinds of Tableau sheets in greater detail. For now, let's get a sense of how to create new sheets by identifying each of the icons.
+
+	Worksheet Icon :A worksheet is composed of one visualization view along with the shelves, cards, and other tools used to create each view.
+
+	Dashboard Icon : A dashboard is a collection of views from many worksheets.
+
+	Story Icon : A story is a collection of worksheets or dashboards that have been organized in a presentation-like format so the viewer can understand the data in the order the creator intended.
+
+
+Left Pane
+
+	Connections Card : Displays the connected data source and other details about the connected data. * When using file-based data (like CSV files and Excel workbooks), the Left pane contains data such as the file name and worksheets in the workbook. * When using relational data (like a database), the left pane contains server information, tables in the database, and the database schema.
+
+	Sheets Card : Displays information about the current workbook, including the tables in the data and the relationships between tables.
+
+Canvas: logical layer : The canvas opens with the logical layer, where you can create relationships between tables. If you double-click a table in the logical layer, it opens the Canvas physical layer where you can add joins and unions between tables to create a unified data source.
+
+Command Bar : The command bar contains shortcuts to common commands. Some of these commands may seem unfamiliar, but we will cover them in upcoming lessons.
+
+	Tableau Icon : Allows us to return to the Start Page
+
+	Undo/Redo : Return to the previous action or repeat the previous action
+
+	Replay Animation : Replays an animation on a dashboard
+
+	Save : Save your workbook locally or to Tableau Public
+
+	Run Update : Runs a manual query of the data to update the view with changes
+
+
+Your Turn: Populate the Data Source Page
+
+Now, we will populate the Data Source Page with data from our sample database.
+1. First, Drag the **Orders table** from the Left pane to the Canvas.
+
+2. You should notice that two more panes appear in the lower portion of your screen. This is the **Data grid , which displays a preview of the first 1,000 rows of the data contained in the data source that we selected from the Left pane, and the **Metadata grid  displays the fields in your data source as rows.
+
+3. Since we have populated the Data Source page with at least one table from your data source, you can begin working with the data in the **Tableau Workspace**. To launch the Tableau workspace, select **worksheet** from the Sheets tab and create a sheet.
+Great! Now you have populated the Data Source page and created your first sheet.
+
+Components of the Tableau Workspace
+
+The Tableau workspace consists of menus, a toolbar, the Data pane, cards and shelves, and one or more sheets. Sheets can be worksheets, dashboards, or stories. we have divided the Tableau workspace into quadrants and labeled them. Let's explore each of the quadrants.
+
+1. The Data Pane/Data Tab
+First, let's take a look at the Data pane. Keep in mind that some of these components will change slightly as we begin working with multiple data sources in future lessons.
+
+	Data Source : Displays the name of the primary table that we used to populate the Data source page. We do not need to worry about this just yet, since we are only using one table.
+
+	Search Bar : Allows us to search all of the column names in our data source. If multiple data sources were loaded, we could search among the columns from all of those sources.
+
+	Tables : This is where the schema for each data source will be displayed. When there is a single data source, only the column names are displayed. When there are multiple data sources, the table name will be displayed with the column names underneath.
+
+	Dimensions and Measures :Below the Tables section there are two lists. Notice how they are color coded? The first list has a blue font, while the second has a green font. In addition, each of the items on the list has a special icon next to them. These are known as Dimensions and Measures, and they are a comprehensive list of the different columns in all of the data sources connected to the workspace. We will dive into the logic behind the colors and icons soon!
+
+	Analytics Tab : For the next few lessons, we will be focusing on the Data tab. However, it will be helpful to know where the Analytics tab is for future lessons.
+
+2. Shelves and Cards
+In between the Data pane and active sheets are three rectangles. The first two, Pages and Filters are called shelves. The third rectangle, Marks is called a card. Let's briefly discuss shelves and cards in Tableau so that we can prepare to learn some of the most common operations in the upcoming lab.
+
+Shelves
+Shelves are objects where you can drag pills which are just specific data points from your dataset. Dragging a pill to a shelf triggers Tableau to execute an operation on that data point, such as adding the data to the visualization, excluding data from the visualization, or performing aggregate operations.
+
+For example, if we hover over the name of a dimension or measure in the data pane it becomes a pill (indicated by the oblong highlight around the text) that we can drag to a shelf (in this example it is the Row and Column shelves -- read more about those in Sheets Pane section).
+
+
+	Pages shelf : Helps to break up your view into multiple pages so you can better analyze the effect one specific field has on the rest of the data.
+
+	Filters shelf : Allows you to choose which data to include and exclude from your view.
+
+Cards
+Cards are objects that allow you to apply formatting to your visualizations.
+
+	Marks card : Allows you to add context and detail to your visualizations. You can also customize the appearance of the visualizations in the marks card such as adding color, and text and adjusting the size of different features.
+
+
+3. The Sheets Pane
+The sheets pane is the primary place where your data visualizations will be displayed. However, it will remain blank until we populate the row and column shelves directly above it.
+
+Row and Column Shelves
+At the top of the Sheets pane, When you add data to your worksheet, you do so by dragging a pill to either the Rows or Columns shelf. This is Tableau's version of an X and Y axis. When we drag pills from Dimensions and Measures on the Date Pane to the row and column shelves, our Sheets pane will begin to populate. Keep in mind:
+
+When data is added to the Rows shelf, it will become the horizontal axis, and each entry in the data will become a row or a point on the horizontal axis in a visualization.
+When data is added to the Columns shelf, it will become the vertical axis, and each entry in the data will become a column or a point on the vertical axis in a visualization.
+
+
+4. The Show Me Pane
+On the far right side of the screen is the Show Me pane. Once you have populated the row and column shelves, you can use the Show Me Pane to: * choose the type of visualization * See the type of data needed for each visualization * how many dimensions and measures are necessary to generate the visualization * possible visualizations based on your data
+
+5. The Menu Bar
+At the top of your screen is the Menu bar. This menu bar contains many functions to help you in your creation of worksheets and dashboards.
+
+	Tableau Icon : Will return you to the Start page where you can start a new workbook and connect to new data
+
+	Undo and Redo : Will undo the last action and will do the last action that was undone
+
+	Save : Will allow you to save your work either to Tableau Desktop or Tableau Public depending on which version you are using
+
+	New Data Source : Will connect to a new data source
+
+	New Sheet : Adds a new sheet to the current workbook
+
+	Swap : Moves the fields on the Rows shelf to the Columns shelf and vice versa.
+
+	Sort Ascending/Descending : Sort Ascending sorts values from smallest to largest and Sort Descending will sort values from largest to smallest.
+
+	Highlight : Will turn on highlighting on the selected sheet, allowing you to accentuate important data points in your viz.
+
+	Group Members : Combines selected values to create groups. Use the drop-down menu to specify whether to group on a specific dimension or across all dimensions if you are using multiple dimensions.
+
+	Show Marks Labels : Reveal labels in visualization
+
+	Fix Axis : Switches between a locked axis (only shows a specific range) and a dynamic axis that adjusts the range based on the minimum and maximum values in the view
+
+	Fit : Will allow you to fit your visualization to the screen with the options of width, height, standard, and entire view
+
+	Show/Hide Cards : Shows and hides specific cards in a worksheet. Just select the card you want to show or hide from the drop-down menu.
+
+	Presentation Mode : Will allow you to hide all of the editing tools and present your worksheets or dashboards
+
+Summary
+In this lesson, we populated the Data Source page with sample data from the Superstore Sales dataset. Then, we explored the components of the Data Source page and launched the Tableau workspace. Finally, we got familiar with the Tableau workspace to build a foundation for creating visualizations.
+
+In the upcoming lesson, we will take a closer look at Measures and Dimensions and review some of the most useful visualizations you can create with Tableau.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
